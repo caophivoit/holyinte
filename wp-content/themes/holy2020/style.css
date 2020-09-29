@@ -1,0 +1,212 @@
+/*
+Theme Name: Holy 2020
+Theme URI: http://v-studio.vn
+Author: V-Studio Team
+Author URI: http://v-studio.vn
+Description:
+Version: 1.0
+License:
+License URI:
+Text Domain: holy2020
+Tags:
+*/
+
+.navbar-top {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.navbar-top li {
+    margin: 0;
+    font-size: 12px;
+}
+
+.navbar-top li > a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Arial";
+    position: relative;
+    padding: 0;
+    margin: 5px 10px;
+}
+
+.navbar-top li > a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-top li > a:hover:after {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #efd484;
+    content: '';
+}
+
+.navbar-top li.current-page-ancestor > a,
+.navbar-top li.current-page-item > a,
+.navbar-top li.current-menu-item > a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-top li.current-page-ancestor > a:after,
+.navbar-top li.current-page-item > a:after,
+.navbar-top li.current-menu-item > a:after {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #efd484;
+    content: '';
+}
+
+.navbar-top > li.menu-item {
+    position: relative;
+    padding: 15px 12px;
+}
+
+.footer .all-email .box-email-later form .wpcf7-form-control-wrap {
+    float: left;
+    width: 74%;
+}
+
+.footer .all-email .box-email-later form input[type=submit] {
+    width: 26%;
+    height: 40px;
+    background: #cec1b1;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.footer .all-email .box-email-later div.wpcf7 .ajax-loader {
+    position: absolute;
+}
+
+
+.top-banner {
+    width: 100vw !important;
+}
+
+.top-banner img {
+    max-width: auto !important;
+    width: 100vw !important;
+}
+
+.chat-mute .icon-viber .number-viber {
+    background: #c59a67;
+}
+
+.page-template-page-dich-vu-php .col-lg-12 {
+    padding: 0 50px;
+}
+
+p img.aligncenter {
+    margin: 0 auto !important;
+    display: block;
+}
+
+body.user-scroll .box-logo-top {
+    transform: scale(0.4);
+    transform-origin: top center;
+}
+
+body.customize-support .fix-nav {
+    top: 32px;
+}
+
+.page-template-page-bac-si-truong .pic-doctor {
+    width: auto;
+    float: left;
+}
+
+/*.page-template-page-ve-chung-toi .text-content {*/
+/*    max-height: 187px;*/
+/*    overflow-y: scroll;*/
+/*}*/
+
+.page-template-page-ve-chung-toi .info-about .text-tt {
+    font-family: "SFUToledoMedium";
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.box-about {
+    padding: 0;
+}
+
+.page-template-page-dich-vu .col-lg-12 ul li,
+.page-template-page-dich-vu .info-about ul li {
+    list-style-type: disc;
+}
+
+.box-text-tt-about small {
+    display: block;
+    font-size: 16px;
+}
+
+#carouselAbout {
+    width: 41.6%;
+    margin: 0 12px 12px 0;
+    float: left;
+}
+
+@media (max-width: 767px) {
+    .mb-nav-top .navbar-top li a {
+        color: #fff;
+    }
+
+    .page-template-page-dich-vu-php .col-lg-12 p img {
+        max-width: 100% !important;
+        height: auto;
+    }
+
+    .page-template-page-dich-vu-php .col-lg-12 {
+        padding: 0 15px;
+    }
+
+    body.customize-support .fix-nav {
+        top: 0;
+    }
+
+    .col-logo {
+        width: 100%;
+    }
+
+    .box-menu-top {
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+
+    body.user-scroll .box-logo-top {
+        transform: none;
+    }
+
+    .page-template-page-bac-si-truong .text-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .page-template-page-bac-si-truong .info-doctor .text-content {
+        padding: 0 10px;
+    }
+
+    .page-template-page-bac-si-truong .info-doctor .text-content p:first-child {
+        padding-left: 70px;
+    }
+
+    #carouselAbout {
+        float: none;
+        width: 100%;
+    }
+}

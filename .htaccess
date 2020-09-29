@@ -1,0 +1,132 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# BEGIN WordPress
+# Các nội dung nằm giữa `BEGIN WordPress` và `END WordPress` được tạo ra tự động, và chỉ nên được thay đổi thông qua các filter của WordPress. Mọi thay đổi tới thành phần này có thể sẽ bị mất và ghi đè.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN Brute Force Login Protection
+<FilesMatch ".*\.(php|html?|css|js|jpe?g|png|gif)$">
+order deny,allow
+deny from 201.162.68.180
+deny from 108.62.3.41
+deny from 197.63.48.63
+deny from 178.217.250.5
+deny from 92.84.203.231
+deny from 34.71.128.152
+deny from 80.82.68.229
+deny from 192.99.34.42
+deny from 192.99.36.177
+deny from 165.22.34.222
+deny from 35.225.58.142
+deny from 195.154.48.39
+deny from 54.38.253.1
+deny from 212.83.146.239
+deny from 150.95.152.199
+deny from 185.128.139.27
+deny from 161.35.196.133
+deny from 45.32.105.224
+deny from 104.131.15.190
+deny from 42.1.60.103
+deny from 92.85.130.53
+deny from 198.27.80.123
+deny from 206.189.128.158
+deny from 134.122.120.74
+deny from 207.154.236.97
+deny from 192.241.132.115
+deny from 51.254.118.224
+deny from 54.37.17.21
+deny from 64.227.7.123
+deny from 77.44.210.129
+deny from 104.238.116.152
+deny from 217.182.193.49
+deny from 188.165.230.118
+deny from 192.99.4.59
+deny from 144.217.72.135
+deny from 192.99.15.84
+deny from 163.172.207.224
+deny from 68.235.39.62
+deny from 80.82.70.25
+deny from 49.12.3.193
+deny from 212.129.37.96
+deny from 159.203.119.225
+deny from 198.12.254.79
+deny from 164.68.111.62
+deny from 134.213.52.19
+deny from 45.119.82.132
+deny from 147.135.87.163
+deny from 142.93.169.211
+deny from 188.166.191.169
+deny from 3.16.28.1
+deny from 167.99.162.102
+deny from 54.209.1.40
+deny from 103.82.250.75
+deny from 209.141.58.150
+deny from 159.65.151.8
+deny from 95.211.244.172
+deny from 45.149.76.100
+deny from 46.101.249.178
+deny from 203.130.192.242
+deny from 103.90.226.35
+deny from 164.90.229.36
+deny from 83.99.176.172
+deny from 213.136.93.171
+deny from 157.245.92.112
+deny from 159.65.184.208
+deny from 34.72.230.1
+deny from 103.75.184.179
+deny from 142.93.73.197
+deny from 68.183.91.116
+deny from 37.139.17.223
+deny from 157.230.14.51
+deny from 44.232.246.95
+deny from 18.136.228.247
+deny from 31.207.36.47
+deny from 206.189.46.147
+deny from 78.24.14.88
+deny from 207.244.225.235
+deny from 206.189.188.12
+deny from 103.133.114.6
+deny from 157.245.144.70
+deny from 148.251.47.144
+deny from 88.99.240.38
+deny from 167.71.124.33
+deny from 103.216.113.30
+deny from 161.35.194.6
+deny from 124.156.178.215
+deny from 64.227.58.164
+deny from 103.221.223.55
+deny from 206.189.90.29
+deny from 167.172.222.222
+deny from 123.31.24.142
+deny from 104.131.119.105
+deny from 148.72.212.159
+deny from 61.219.249.103
+deny from 178.63.23.84
+deny from 191.252.120.69
+deny from 51.83.71.190
+deny from 162.243.94.24
+deny from 129.226.169.113
+deny from 185.122.39.178
+deny from 52.163.100.5
+deny from 167.172.179.103
+deny from 206.189.141.73
+deny from 86.109.170.154
+deny from 203.171.21.93
+deny from 174.129.129.162
+</FilesMatch>
+# END Brute Force Login Protection

@@ -1,0 +1,49 @@
+- home
+    - slide: title, image
+    - slide: bác sĩ Tường (giống ve-chung-toi)
+    - team: image, name, description
+    - slide: image, title, content, link
+    - slide: image, title, content, link
+    - contact: left / map, right / title, description, address, phone, email
+- ve-chung-toi
+    - banner
+    - về chúng tôi / static image
+    - về chúng tôi / slide: title, content
+    - bác sĩ Tường / slide: image, link, title, content
+    - nhận xét / slide: image, title, content
+    - trước sau / slide: image
+- bac-si-tuong
+    - banner
+    - thành tựu / static image (giống về chúng tôi)
+    - thành tựu / slide: title, content (giống về chúng tôi)
+    - thành quả / slide: image (giống trước sau)
+- doi-ngu
+    - banner
+    - bác sĩ / image, name, description
+- dich-vu
+    - banner
+    - dịch vụ / image, content
+- thiet-bi
+    - banner
+    - thiết bị / image, content
+- tin-tuc
+    - image
+    - title
+    - content
+- lien-he
+    - map
+    - content
+        - title
+        - description
+        - address
+        - phone
+        - email
+    - form
+        - full name
+        - email
+        - mobile
+        - content
+    
+    
+    
+    
