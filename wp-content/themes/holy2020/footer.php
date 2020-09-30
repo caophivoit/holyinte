@@ -42,5 +42,6 @@
 </footer>
 </div>
 <?php wp_footer(); ?>
+<script src="<?php holy2020_path() ?>assets/js/theme.js"></script>
 </body>
 </html>

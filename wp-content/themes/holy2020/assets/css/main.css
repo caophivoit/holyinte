@@ -134,7 +134,7 @@ a:hover { text-decoration: none; color: #424d5c; }
 .footer .box-social { width: 100%; display: flex; margin-top: 20px; padding: 0; }
 .footer .box-social li { padding-right: 30px; }
 .footer .all-email { padding: 10px 0; text-align: center; }
-.footer .all-email .box-email-later { position: relative; max-width: 500px; padding: 0px; background: #e9e1d7; display: flex; margin: auto; }
+.footer .all-email .box-email-later { position: relative; max-width: max-content; padding: 0px; background: #e9e1d7; display: flex; margin: auto; }
 .footer .all-email .box-email-later input { width: 75%; height: 40px; padding: 10px 20px; border: none; background: transparent; outline: none; color: #b0a190; }
 .footer .all-email .box-email-later input::-webkit-input-placeholder { font-size: 14px; color: #b0a190; }
 .footer .all-email .box-email-later input::-moz-placeholder { font-size: 14px; color: #b0a190; }

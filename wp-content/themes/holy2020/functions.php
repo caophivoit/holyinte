@@ -11,8 +11,8 @@ function holy2020_theme_setup() {
 	add_theme_support( 'title-tag' );
 
 	// Theme menu location
-	register_nav_menu( 'primary_left', __( 'Primary Left' ) );
-	register_nav_menu( 'primary_right', __( 'Primary Right' ) );
+	//register_nav_menu( 'primary_left', __( 'Primary Left' ) );
+	//register_nav_menu( 'primary_right', __( 'Primary Right' ) );
 	register_nav_menu( 'footer_navigation', __( 'Footer Menu' ) );
 
 	// Option page
@@ -43,7 +43,7 @@ function holy2020_theme_setup() {
 	add_theme_support( 'custom-logo', $defaults );
 
 	// Auto child menu
-	new Holy2020AutoChildPageMenu();
+	//new Holy2020AutoChildPageMenu();
 }
 
 function holy2020_acf_google_map_api( $api ) {
@@ -63,24 +63,17 @@ add_action( 'wp_enqueue_scripts', 'holy2020_custom_script' );
  * Add theme scripts and styles
  */
 function holy2020_custom_script() {
-	// wp_enqueue_style( 'Arial', holy2020_path( FALSE ) . 'Arial' );
 	wp_enqueue_style( 'holy2020_bootstrap', holy2020_path( FALSE ) . 'assets/css/bootstrap.min.css' );
 	wp_enqueue_style( 'holy2020_main', holy2020_path( FALSE ) . 'assets/css/main.css' );
 	wp_enqueue_style( 'holy2020_style', holy2020_path( FALSE ) . 'style.css' );
+	wp_enqueue_style( 'holy2020_assets_style', holy2020_path( FALSE ) . 'assets/css/style.css' );
+	wp_enqueue_style( 'holy2020_assets_responsive', holy2020_path( FALSE ) . 'assets/css/responsive.css' );
 
 	wp_enqueue_script( 'holy2020_code', holy2020_path( FALSE ) . 'js/code.js', [ 'jquery' ], '1.0.0', FALSE );
 	wp_enqueue_script( 'holy2020_popper', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', [ 'jquery' ], '1.14.7', FALSE );
 	wp_enqueue_script( 'holy2020_bootstrap', holy2020_path( FALSE ) . 'assets/js/bootstrap.min.js', [ 'jquery' ], '1.0.0', FALSE );
 	wp_enqueue_script( 'holy2020_clinic', holy2020_path( FALSE ) . 'assets/js/clinic.js', [ 'jquery' ], '1.0.0', FALSE );
 	wp_enqueue_script( 'holy2020_carousel', holy2020_path( FALSE ) . 'assets/js/Carousel.js', [ 'jquery' ], '1.0.0', FALSE );
-	wp_enqueue_script( 'holy2020_theme', holy2020_path( FALSE ) . 'js/theme.js', [ 'jquery' ], '1.0.0', FALSE );
-
-
-	//  wp_enqueue_script( 'holy2020_waypoints', '//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js', [], '4.0.0', FALSE );
-	//  wp_enqueue_script( 'holy2020_bootstrap', pbnc19_path( FALSE ) . 'assets/js/bootstrap.min.js', [ 'jquery' ], '1.0.0', FALSE );
-	//  wp_enqueue_script( 'holy2020_intermex', pbnc19_path( FALSE ) . 'assets/js/intermex.js', [ 'jquery' ], '1.0.0', FALSE );
-	//  wp_enqueue_script( 'holy2020_counterup', pbnc19_path( FALSE ) . 'assets/js/jquery.counterup.min.js', [ 'jquery' ], '1.0.0', FALSE );
-	//  wp_enqueue_script( 'holy2020_code', pbnc19_path( FALSE ) . 'code.js', [ 'jquery' ], '1.0.0', FALSE );
 }
 
 function holy2020_field_image_src( $image, $size = '540x320' ) {
@@ -146,12 +139,16 @@ function holy2020_paginate_links( $post_query ) {
 			'type'      => 'array',
 		] );
 
-		echo '<ul class="pagin-news">';
+		echo '<div class="pagination">';
 		foreach ( $links as $link ) {
 			$link = preg_match( '/<a/', $link ) ? $link : "<a href='#'>{$link}</a>";
-			echo "<li>{$link}</li>";
+			if($current_page == $link->current){
+				echo str_replace("page-numbers","page-numbers active",$link);
+			}else{
+				echo $link;
+			}
 		}
-		echo '</ul>';
+		echo '</div>';
 	}
 }
 
